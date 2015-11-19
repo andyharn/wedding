@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+@import url(https://fonts.googleapis.com/css?family=Radley);
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+/*Unversal CSS Rules*/
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  font-family:'Allerta', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+  display:block;
+}
+
+p, a, h2, h3, h4 {
+font-family: 'Radley', serif;
+}
+
+header {
+  width:100%;
+  margin: 0 auto;
+  background-color:#1B435D;
+  text-align: center;
+  color:white;
+}
+
+h1 {
+  margin:0;
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 a {
+  text-decoration: none;
+  color:white;
+  margin:0;
+  font-family: 'Amatic SC', cursive;
+}
+
+.containhead {
+  width:75%;
+  margin:0 auto;
+}
+
+nav {
+  background-color:#FF895D;
+  padding:.5em 0 .5em .5em;
+}
+
+nav::after {
+  display:table;
+  content: "";
+  clear:both;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float:left;
+  width:20%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-right:.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  font-size: .80em;
+}
+
+nav a:hover {
+  color:#778899;
+}
+
+/*-----------------------Mobile First--------------------*/
+
+/*Universal Mobile*/
+
+.head {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+}
+/*main page*/
+
+.homeinvite {
+  background-color: #78BBE6;
+}
+
+.homecontent {
+  width:75%;
+  margin:0 auto;
+}
+
+.homecontent p {
+  font-family: 'Amatic SC', cursive;
+  color:white;
+}
+
+.homecontent span {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+
+/*proposal page*/
+
+.left-col {
+  float:left;
+  width:50%;
+  padding-right: .5em;
+  display:flex;
+}
+
+.right-col {
+  float:left;
+  width:50%;
+  padding-right: .5em;
+}
+
+.piccontainer::after{
+  display:table;
+  content: "";
+  clear:both;
+}
+.col-1-3::after{
+  display:table;
+  content: "";
+  clear:both;
+}
+
+.main {
+  padding-top:8.5em;
+  }
+
+/* ==========================================================================
+   Regular Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 452px) {
+
+.main {
+  padding-top:6em;
+}
+
+@media only screen and (min-width: 480px) {
+
+  p {
+    font-size:1.2em;
+  }
+
+@media only screen and (min-width: 506px) {
+
+.main {
+  padding-top:4.8em;
+}
+
+p {
+  font-size:1.3em;
+}
+
+@media only screen and (min-width: 768px) {
+
+.head {
+  position:static;
+}
+
+.main {
+  padding:0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size:1.5em;
+}
+
+nav a {
+  font-size: .9em;
+}
+
+@media only screen and (min-width: 900px) {
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size:1.7em;
+}
+
+nav a {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 1140px) {
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

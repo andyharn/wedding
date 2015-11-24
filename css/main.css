@@ -18,8 +18,14 @@ img {
   display:block;
 }
 
-p, a, h2, h3, h4 {
+a, h2, h3, h4 {
 font-family: 'Radley', serif;
+font-weight: bolder;
+}
+
+p {
+font-family:'Amatic SC', cursive;
+font-weight: bolder;
 }
 
 header {
@@ -33,6 +39,7 @@ header {
 h1 {
   margin:0;
   font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
 }
 
 h1 a {
@@ -40,6 +47,7 @@ h1 a {
   color:white;
   margin:0;
   font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
 }
 
 .containhead {
@@ -84,7 +92,7 @@ nav a:hover {
 
 /*Universal Mobile*/
 
-.head {
+.mainhead {
   position:fixed;
   top:0;
   right:0;
@@ -141,6 +149,40 @@ nav a:hover {
   padding-top:8.5em;
   }
 
+/*wedding details*/
+
+.maindetails {
+  position:fixed;
+  height:100%;
+  width:100%;
+  background-image: url("../img/moe16.jpg");
+  background-size:cover;
+  background-position: center;
+  background-postion:fixed;
+  background-repeat: no-repeat;
+}
+
+p, h3, h4 {
+  color:white;
+  font-weight: bolder;
+}
+
+.detailscontent {
+  width:75%;
+  margin:2em auto;
+  padding:1em 0 1em 1em;
+  background-color: tan;
+  opacity:.9;
+}
+
+.col-1-2{
+  width:50%;
+  float:left;
+  padding-right:1em;
+}
+
+
+
 /* ==========================================================================
    Regular Media Queries
    ========================================================================== */
@@ -169,7 +211,7 @@ p {
 
 @media only screen and (min-width: 768px) {
 
-.head {
+.mainhead {
   position:static;
 }
 

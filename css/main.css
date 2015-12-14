@@ -123,34 +123,29 @@ nav a:hover {
   font-family: 'Amatic SC', cursive;
 }
 
+.main {
+  padding-top:8.5em;
+  }
+
 /*proposal page*/
-
-.left-col {
-  float:left;
-  width:50%;
-  padding-right: .5em;
-  display:flex;
-}
-
-.right-col {
-  float:left;
-  width:50%;
-  padding-right: .5em;
-}
 
 .piccontainer::after{
   display:table;
   content: "";
   clear:both;
 }
-.col-1-3::after{
-  display:table;
-  content: "";
-  clear:both;
-}
 
-.main {
-  padding-top:8.5em;
+.mainp {
+  margin:0 auto;
+  width:99.9%;
+  }
+
+.mainp img {
+  margin:0 auto;
+  }
+
+.mainp p {
+  color:black;
   }
 
 /*wedding details*/
@@ -222,6 +217,19 @@ h2 {
   font-family: 'Amatic SC', cursive;
 }
 
+.col-1-3 img {
+  position: relative;
+  top:0;
+}
+
+.test {
+  opacity: 0;
+}
+
+.test:hover {
+  opacity:1;
+}
+
 /* ==========================================================================
    Regular Media Queries
    ========================================================================== */
@@ -230,8 +238,8 @@ h2 {
 
 .main {
   padding-top:6em;
-
 }
+
 p {
   font-size:1.3em;
 }

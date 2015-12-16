@@ -194,7 +194,7 @@ h3, h4 {
   clear:both;
 }
 
-.col-1-2{
+.col-1-2 {
   background-color: #D3D0A8;
   border:.2em white solid;
   margin-bottom:2%;
@@ -207,7 +207,7 @@ h3, h4 {
   opacity:.9;
 }
 
-.col-1-3 {
+div [class^="col-1-3"] {
   background-color: #D3D0A8;
   border:.2em white solid;
   margin-bottom:2%;
@@ -219,23 +219,11 @@ h3, h4 {
   clear:both;
 }
 
+
 h2 {
   color:white;
   text-align: center;
   font-family: 'Amatic SC', cursive;
-}
-
-.col-1-3 img {
-  position: relative;
-  top:0;
-}
-
-.test {
-  opacity: 0;
-}
-
-.test:hover {
-  opacity:1;
 }
 
 /* ==========================================================================
@@ -273,6 +261,8 @@ p {
   float:left;
   margin-right:2.6666666666666667%;
   height:17em;
+  border-radius:1.5em;
+  text-align: center;
 }
 
 .top .col-1-2:first-of-type {
@@ -283,15 +273,70 @@ p {
   margin-left:2.6666666666666667%;
 }
 
-.col-1-3 {
+.border {
+  border: white dashed .1em;
+}
+div [class^="col-1-3"] {
+  width:30.3333333333333333%;
+  float:left;
+  margin-right:2.250000000000003%;
+  height:11em;
+  border-radius:1.5em;
+  text-align: center;
+}
+
+.col-1-3-cow {
+  background-image:url("../img/beef.jpg");
+  background-size:100%;
+}
+
+.col-1-3-cow:hover {
+  background-image: none;
+  background-color: #D3D0A8;
   width:30.3333333333333333%;
   float:left;
   margin-right:2.250000000000003%;
   height:11em;
 }
 
-.col-1-3:first-of-type {
+.col-1-3-fish {
+  background-image:url("../img/fish.jpg");
+  background-size:100%;
+}
+
+.col-1-3-fish:hover {
+  background-image: none;
+  background-color: #D3D0A8;
+  width:30.3333333333333333%;
+  float:left;
+  margin-right:2.250000000000003%;
+  height:11em;
+}
+
+.col-1-3-hen {
+  background-image:url("../img/hen.gif");
+  background-size:100%;
+}
+
+.col-1-3-hen:hover {
+  background-image: none;
+  background-color: #D3D0A8;
+  width:30.3333333333333333%;
+  float:left;
+  margin-right:2.250000000000003%;
+  height:11em;
+}
+
+div [class^="col-1-3"]:first-of-type {
   margin-left:2.250000000000003%;
+}
+
+.col-content {
+  opacity:0;
+}
+
+.col-content:hover {
+  opacity:1;
 }
 
 @media only screen and (min-width: 550px) {

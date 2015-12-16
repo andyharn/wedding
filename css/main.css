@@ -148,6 +148,14 @@ nav a:hover {
   color:black;
   }
 
+.invite {
+  background-color: #D3D0A8;
+}
+
+.invite p {
+  color:white;
+}
+
 /*wedding details*/
 
 .maindetails {

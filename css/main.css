@@ -156,6 +156,25 @@ nav a:hover {
   color:white;
 }
 
+.mainp .border {
+  border-bottom: white dashed .1em;
+  margin:0 auto;
+  width:20%;
+  padding-top:1em;
+  background-color: #D3D0A8;
+}
+
+.mainp .bordercontain {
+  width:100%;
+  background-color: #D3D0A8;
+}
+
+.invite .content{
+  width:95%;
+  margin:0 auto;
+  padding-top:.75em;
+}
+
 /*wedding details*/
 
 .maindetails {
@@ -175,7 +194,7 @@ p  {
   font-weight: bolder;
 }
 
-h3, h4 {
+.homedetails h3, h4 {
   color:white;
   font-weight: bolder;
   margin-bottom:.5em;
@@ -220,11 +239,16 @@ div [class^="col-1-3"] {
 }
 
 
-h2 {
+.homedetails h2 {
   color:white;
   text-align: center;
   font-family: 'Amatic SC', cursive;
+  font-size:2em;
 }
+
+/*couple*/
+
+
 
 /* ==========================================================================
    Regular Media Queries
@@ -238,6 +262,10 @@ h2 {
 
 p {
   font-size:1.3em;
+}
+
+.homedetails h2 {
+  font-size:2.25em;
 }
 
 @media only screen and (min-width: 480px) {
@@ -255,6 +283,8 @@ p {
 p {
   font-size:1.42em;
 }
+
+/*wedding details*/
 
 .col-1-2 {
   width:46%;
@@ -274,8 +304,11 @@ p {
 }
 
 .border {
-  border: white dashed .1em;
+  border-bottom: white dashed .1em;
+  margin:0 auto;
+  width:20%;
 }
+
 div [class^="col-1-3"] {
   width:30.3333333333333333%;
   float:left;
@@ -401,6 +434,10 @@ nav a {
 
 .col-1-3 {
   height:9em;
+}
+
+.homedetails h2 {
+  font-size: 2.5em;
 }
 
 @media only screen and (min-width: 900px) {

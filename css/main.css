@@ -248,8 +248,83 @@ div [class^="col-1-3"] {
 
 /*couple*/
 
+.mainc {
+  background-color: #D3D0A8;
+}
 
+.profilek{
+  width:75%;
+  margin:0 auto;
+}
 
+.profilepick {
+  float:right;
+  width:25%;
+}
+
+.profilepick img {
+  padding:1em;
+  border: white solid .2em;
+  margin:1em auto 0 auto;
+}
+
+.profilesriptk {
+  float:right;
+  width:75%;
+}
+
+.profilesriptk p {
+  padding:2em;
+}
+
+.profilek::after{
+  display:table;
+  content: "";
+  clear:both;
+}
+
+.profilee {
+  width:75%;
+  margin:0 auto;
+}
+
+.profilepice {
+  float:left;
+  width:25%;
+}
+
+.profilepice img{
+  padding:1em;
+  border: white solid .2em;
+  margin:1em auto 0 auto;
+}
+
+.profilesripte {
+  float:left;
+  width:75%;
+
+}
+
+.profilee::after{
+  display:table;
+  content: "";
+  clear:both;
+}
+
+.profilesripte p {
+  padding:2em;
+}
+
+.profilec {
+  width:75%;
+  margin:0 auto;
+}
+
+.profilec img {
+  padding:1em;
+  border: white solid .2em;
+  margin: 1em auto 0 auto;
+}
 /* ==========================================================================
    Regular Media Queries
    ========================================================================== */
